@@ -1,3 +1,30 @@
 .combates:hover {
     background-color: #ff4d4d !important;
 }
+
+#div-index{
+    background-image: url(assets/images/fondo-ring.jpg);
+    background-position: center;
+    background-size: cover; 
+    height: 100vh;
+}
+
+#index{
+    max-width: 70vw;
+    padding: 30px;
+    height: auto;
+}
+#flecha-abajo{
+    width: 9vh;
+    height: auto;
+    animation: rebote 0.8s infinite alternate;
+}
+
+@keyframes rebote{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-10px);
+    }   
+}
