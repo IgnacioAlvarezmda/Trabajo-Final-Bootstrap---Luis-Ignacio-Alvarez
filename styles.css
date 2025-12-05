@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+}
+
 .combates:hover {
     background-color: #ff4d4d !important;
 }
@@ -19,6 +23,13 @@
     height: auto;
     animation: rebote 0.8s infinite alternate;
 }
+
+.desaparecer{
+    opacity: 0 !important;
+    transition: opacity 1s ease-out;
+}
+
+
 
 @keyframes rebote{
     0%{
