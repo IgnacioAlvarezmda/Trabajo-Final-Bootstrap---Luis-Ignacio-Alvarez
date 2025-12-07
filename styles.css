@@ -2,8 +2,15 @@ body{
     background-color: black;
 }
 
+.combates{
+transition: all 0.1s ease-in-out;
+}
+
 .combates:hover {
     background-color: #ff4d4d !important;
+    /*SOMBRA TIPO BOTON*/
+    box-shadow: -5px 5px 8px #000000;
+    transition: all 0.1s ease-in-out;
 }
 
 #div-index{
@@ -21,7 +28,12 @@ body{
 #flecha-abajo{
     width: 9vh;
     height: auto;
+    transition: all 0.2s ease-in-out;
     animation: rebote 0.8s infinite alternate;
+}
+#flecha-abajo:hover{
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
 }
 
 .desaparecer{
@@ -29,6 +41,15 @@ body{
     transition: opacity 1s ease-out;
 }
 
+.mostrar-info{
+    display: flex !important;
+}
+
+.infoextracombates img{
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
 
 
 @keyframes rebote{

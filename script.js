@@ -28,6 +28,20 @@ const cantidad= document.getElementById("cantidad").value;
 botonentradas.addEventListener("click",(e)=>{
     if (nombre==""||email==""||cantidad==""){
         alert ("Por favor completa todos los campos del formulario correctamente.")
-        return;
-        alert("Gracias por solicitar informacion, revisá tu correo electrónico para ver los detalles de las entradas. :) ")
+        return prompt("Gracias por solicitar informacion, revisa tu correo electrónico para ver los detalles de las entradas. :)");
     }})
+
+    const tarjetascombates= document.querySelectorAll(".combates")
+    
+
+    tarjetascombates.forEach((tarjeta)=>{
+
+        tarjeta.addEventListener("click",()=>{
+
+            const divinfo= tarjeta.querySelector(".infoextracombates")
+
+            if(divinfo){
+                divinfo.classList.toggle("mostrar-info");
+            }
+        })        
+    })
