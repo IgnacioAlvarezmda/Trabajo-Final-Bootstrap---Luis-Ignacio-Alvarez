@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <header class="container-fluid align-center text-center">
+    
+    <header class="container-fluid align-items-center text-center">
         <div class="row">
             <div id="div-index" class="col justify-content-center align-items-center d-flex flex-column">
                 <img id="index" src="assets/images/logo-pdm.png" alt="Logo del evento">
@@ -19,9 +20,34 @@
         </div>
     </header>
 
+<nav class="navbar position-sticky bg-dark top-0 navbar-expand-lg navbar-dark">
+        <div class="container-fluid align-items-center text-center">
+            <a class="navbar-brand">
+                <img src="assets/images/logo-pdm.png" alt="Logo pequeño del evento" width="100">
+            </a>
+            <button id="boton-nav"  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <img src="assets/images/flecha-abajo-nav.svg" alt="Flecha desplegar menu de navegacion" width="40" >
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#div-index">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#combate1">Combates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-mapa">Ubicacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formulario-entradas">Entradas</a>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+    </nav>
 
-
-    <section class="container col-6 align-center text-center my-4 p-4 bg-dark text-white">
+    <section class="container col-6 align-items-center text-center my-4 p-4 bg-dark text-white">
         <div class="row bg-warning rounded">
             <div class="col">
                 <h2 class="p-2"> INFORMACION e HISTORIA del EVENTO</h2>
@@ -34,17 +60,19 @@
 
 
 
-    <main class="container col-10 align-center text-center my-4 p-4 bg-dark text-white">
+    <main class="container col-10 align-items-center text-center my-4 p-4 bg-dark text-white">
         <h2 class="p-4"> Combates </h2>
         <div class="row">
             <div class="combates col bg-danger p-3 m-2" id="combate1">
                 <p>Combate 1</p>
                 <p>Willians Banks vs Gabino Silva</p>
-                <div class="infoextracombates bg-light text-dark p-2 mt-2 rounded d-flex align-center justify-content-center d-none">
+                <div class="infoextracombates bg-light text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
                     <img src="assets/images/banks.png">
-                    <p>Edad</p>
-                    <p>Peso</p>
-                    <p>Altura</p>
+                        <div>
+                            <p>28 - Edad - 30</p>
+                            <p>85 kg - Peso - 90 kg</p>
+                            <p>1.80 m - Altura - 1.85 m</p>
+                        </div>
                     <img src="assets/images/gabino.png">
                 </div>
             </div>
@@ -52,11 +80,13 @@
             <div class="combates col bg-danger p-3 m-2" id="combate2">
                 <p>Combate 2</p>
                 <p>Manu Jove vs Mariano Perez</p>
-                <div class="infoextracombates bg-light text-dark p-2 mt-2 rounded d-flex align-center justify-content-center d-none">
+                <div class="infoextracombates bg-light text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
                     <img src="assets/images/jove.png">
-                    <p>Edad</p>
-                    <p>Peso</p>
-                    <p>Altura</p>
+                        <div>
+                            <p>28 - Edad - 30</p>
+                            <p>85 kg - Peso - 90 kg</p>
+                            <p>1.80 m - Altura - 1.85 m</p>
+                        </div>
                     <img src="assets/images/perez.png">
                 </div>
             </div>
@@ -64,11 +94,13 @@
             <div class="combates col bg-danger p-3 m-2" id="combate3">
                 <p>Combate 3</p>
                 <p>Gero Arias vs Mazza</p>
-                <div class="infoextracombates bg-light text-dark p-2 mt-2 rounded d-flex align-center justify-content-center d-none">
+                <div class="infoextracombates bg-light text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
                     <img  src="assets/images/gero-arias.png">
-                    <p>Edad</p>
-                    <p>Peso</p>
-                    <p>Altura</p>
+                        <div>
+                            <p>28 - Edad - 30</p>
+                            <p>85 kg - Peso - 90 kg</p>
+                            <p>1.80 m - Altura - 1.85 m</p>
+                        </div>
                     <img src="assets/images/tomas-mazza.png">
                 </div>
             </div>
@@ -76,11 +108,13 @@
             <div class="combates col bg-danger p-3 m-2" id="combate4">
                 <p>Combate 4</p>
                 <p>Maravilla Martinez vs Pepi Staropili</p>
-                <div class="infoextracombates bg-light text-dark p-2 mt-2 rounded d-flex align-center justify-content-center d-none">
+                <div class="infoextracombates bg-light text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
                     <img src="assets/images/maravilla.png">
-                    <p>Edad</p>
-                    <p>Peso</p>
-                    <p>Altura</p>
+                        <div>
+                            <p>28 - Edad - 30</p>
+                            <p>85 kg - Peso - 90 kg</p>
+                            <p>1.80 m - Altura - 1.85 m</p>
+                        </div>
                     <img src="assets/images/pepi.png">
                 </div>
             </div>
@@ -89,11 +123,13 @@
             <div class="combates col bg-danger p-3 m-2" id="combate5">
                 <p>Combate 5</p>
                 <p>Monzon vs Bonavena</p>
-                <div class="infoextracombates bg-light text-dark p-2 mt-2 rounded d-flex align-center justify-content-center d-none">
+                <div class="infoextracombates bg-light text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
                     <img>
-                    <p>Edad</p>
-                    <p>Peso</p>
-                    <p>Altura</p>
+                        <div>
+                            <p>28 - Edad - 30</p>
+                            <p>85 kg - Peso - 90 kg</p>
+                            <p>1.80 m - Altura - 1.85 m</p>
+                        </div>
                     <img>
                 </div>
             </div>
@@ -101,11 +137,13 @@
             <div class="combates col bg-danger p-3 m-2" id="combate6">
                 <p>Combate 6</p>
                 <p>Grego vs Goncho</p>
-                <div class="infoextracombates bg-light text-dark p-2 mt-2 rounded d-flex align-center justify-content-center d-none">
+                <div class="infoextracombates bg-light text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
                     <img src="assets/images/grego.png">
-                    <p>Edad</p>
-                    <p>Peso</p>
-                    <p>Altura</p>
+                        <div>
+                            <p>28 - Edad - 30</p>
+                            <p>85 kg - Peso - 90 kg</p>
+                            <p>1.80 m - Altura - 1.85 m</p>
+                        </div>
                     <img src="assets/images/goncho.png">
                 </div>
             </div>
@@ -113,11 +151,13 @@
             <div class="combates col bg-danger p-3 m-2" id="combate7">
                 <p>Combate 7</p>
                 <p>Flor Vigna vs Mica Viciconte</p>
-                <div class="infoextracombates bg-light text-dark p-2 mt-2 rounded d-flex align-center justify-content-center d-none">
+                <div class="infoextracombates bg-light text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
                     <img src="assets/images/flor-vigna.png">
-                    <p>Edad</p>
-                    <p>Peso</p>
-                    <p>Altura</p>
+                        <div>
+                            <p>28 - Edad - 30</p>
+                            <p>85 kg - Peso - 90 kg</p>
+                            <p>1.80 m - Altura - 1.85 m</p>
+                        </div>
                     <img src="assets/images/mica-viciconte.png">
                 </div>
             </div>
@@ -125,14 +165,13 @@
             <div class="combates col bg-danger p-3 m-2" id="combate8">
                 <p>Combate 8</p>
                 <p>Coker vs Perxitaa</p>
-                <div class="infoextracombates bg-light text-dark p-2 mt-2 rounded d-flex align-center justify-content-center d-none">
+                <div class="infoextracombates bg-light text-dark p-2 mt-2 rounded d-flex  align-items-center justify-content-center d-none">
                     <img src="assets/images/c0ker.png">
                         <div>
-                            <p>12 - Edad - 12</p>
-                            <p>Peso</p>
-                            <p>Altura</p> 
+                            <p>28 - Edad - 30</p>
+                            <p>85 kg - Peso - 90 kg</p>
+                            <p>1.80 m - Altura - 1.85 m</p>
                         </div>
-                    
                     <img src="assets/images/perxitaa.png">
                 </div>
             </div>
@@ -142,7 +181,7 @@
 
 
 
-    <section class="container col-8 align-center text-center my-4 p-4 bg-dark text-white">
+    <section class="container col-8 align-items-center text-center my-4 p-4 bg-dark text-white">
         <h2 > Contador </h2>
         <div id="contador">
             <p>Cuenta atras para la pelea...</p>
@@ -152,7 +191,7 @@
     </section>  
 
 
-    <section class="container col-8 align-center text-center my-4 p-4 bg-dark text-white" id="seccion-mapa">
+    <section class="container col-8 align-items-center text-center my-4 p-4 bg-dark text-white" id="seccion-mapa">
         <h2 class="p-4">Ubicacion del Evento</h2>
         <div id="mapa">
             <iframe class="p-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.4446471862107!2d-58.39908378915898!3d-34.64347195948505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb6aeed57bd3%3A0xe5cec50209b9c4ad!2sEstadio%20Tom%C3%A1s%20Adolfo%20Duc%C3%B3!5e0!3m2!1ses-419!2sar!4v1764971931433!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -161,7 +200,7 @@
 
 
 
-    <div class="container col-5 align-center text-center my-4 p-4 bg-dark text-white">
+    <div class="container col-5 align-items-center text-center my-4 p-4 bg-dark text-white">
         <h2 class="p-3"> Solicitar informacion sobre entradas....</h2>
         <form id="formulario-entradas">
             <div class="mb-3">
@@ -183,7 +222,7 @@
 
 
 
-    <footer class="container-fluid align-center text-center p-4 bg-light">
+    <footer class="container-fluid align-items-center text-center p-4 bg-light">
         <h5>Trabajo Final - Desarrollo Web en Bootstrap - Luis Ignacio Alvarez</h5>
     
     </footer>  

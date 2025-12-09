@@ -51,6 +51,14 @@ transition: all 0.1s ease-in-out;
     margin-bottom: 10px;
 }
 
+#boton-nav{
+    background-image: url(assets/images/flecha-abajo-nav.svg);
+}
+
+li{
+    color: white !important;
+}
+
 
 @keyframes rebote{
     0%{
