@@ -46,19 +46,18 @@ transition: all 0.1s ease-in-out;
 }
 
 .infoextracombates img{
-    width: 100px;
+    width: 120px;
     height: auto;
-    margin-bottom: 10px;
 }
 
-#boton-nav{
-    background-image: url(assets/images/flecha-abajo-nav.svg);
+.div-info{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px #000000;
+    min-width: 250px;
+    margin: 20px;
 }
-
-li{
-    color: white !important;
-}
-
 
 @keyframes rebote{
     0%{
