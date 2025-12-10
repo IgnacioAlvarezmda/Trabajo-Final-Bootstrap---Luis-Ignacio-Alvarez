@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/imagenes/tres.svg" type="image/svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Parense de manos III</title>
 </head>
@@ -20,7 +23,7 @@
         </div>
     </header>
 
-<nav class="navbar position-sticky bg-dark top-0 navbar-expand-lg navbar-dark">
+    <nav class="navbar position-sticky top-0 navbar-expand-lg navbar-dark" id="navegacion">
         <div class="container-fluid align-items-center text-center">
             <a class="navbar-brand">
                 <img src="assets/images/logo-pdm.png" alt="Logo del evento" width="100">
@@ -47,7 +50,7 @@
         </div>
     </nav>
 
-    <section class="container col-6 align-items-center text-center my-4 p-4 bg-dark text-white" id="info">
+    <section class="container col-6 align-items-center text-center my-4 p-4 bg-dark text-white transparecia" id="info">
         <div class="row">
             <div class="col">
                 <h2 class="p-4"> ¿Que es Parense de Manos?</h2>
@@ -68,15 +71,17 @@
 
 
 
-    <main class="container col-10 align-items-center text-center p-5 bg-dark text-white">
-        <h2 class="p-4"> Combates </h2>
+    <main class="container col-10 align-items-center text-center p-5 bg-dark text-white transparecia">
+        <h2 class="p-4 pb-5 text-uppercase"> Combates </h2>
         <div class="row">
             <div class="combates col bg-danger p-3 m-2" id="combate1">
-                <p>Combate 1</p>
-                <p>Willians Banks vs Gabino Silva</p>
+                <p class="lead">Combate 1</p>
+                <p><span class="resaltar">Willians Banks</span></p>
+                <p>VS</p>
+                <p><span class="resaltar">Gabino Silva</span></p>
                 <div class="infoextracombates text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
                     <img src="assets/images/banks.png">
-                        <div class="div-info">
+                        <div class="div-info container">
                             <p>28 - Edad - 30</p>
                             <p>85 kg - Peso - 90 kg</p>
                             <p>1.80 m - Altura - 1.85 m</p>
@@ -86,8 +91,10 @@
             </div>
             
             <div class="combates col p-3 m-2" id="combate2">
-                <p>Combate 2</p>
-                <p>Manu Jove vs Mariano Perez</p>
+                <p class="lead">Combate 2</p>
+                <p><span class="resaltar">Manu Jove</span></p>
+                <p>VS</p>
+                <p><span class="resaltar">Mariano Perez</span></p>
                 <div class="infoextracombates text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
                     <img src="assets/images/jove.png">
                         <div class="div-info">
@@ -100,8 +107,10 @@
             </div>
 
             <div class="combates col bg-danger p-3 m-2" id="combate3">
-                <p>Combate 3</p>
-                <p>Gero Arias vs Mazza</p>
+                <p class="lead">Combate 3</p>
+                <p><span class="resaltar">Gero Arias</span></p>
+                <p>VS</p>
+                <p><span class="resaltar">Gabino Silva</span></p>
                 <div class="infoextracombates text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
                     <img  src="assets/images/gero-arias.png">
                         <div class="div-info">
@@ -114,8 +123,10 @@
             </div>
 
             <div class="combates col bg-danger p-3 m-2" id="combate4">
-                <p>Combate 4</p>
-                <p>Maravilla Martinez vs Pepi Staropili</p>
+                <p class="lead">Combate 4</p>
+                <p><span class="resaltar">Maravilla Martinez</span></p>
+                <p>VS</p>
+                <p><span class="resaltar">Pepi Staropili</span></p>
                 <div class="infoextracombates text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
                     <img src="assets/images/maravilla.png">
                         <div class="div-info">
@@ -129,8 +140,10 @@
         </div>
         <div class="row">
             <div class="combates col bg-danger p-3 m-2" id="combate5">
-                <p>Combate 5</p>
-                <p>Espe vs Dairi</p>
+                <p class="lead">Combate 5</p>
+                <p><span class="resaltar">Espe</span></p>
+                <p>VS</p>
+                <p><span class="resaltar">Dairi</span></p>
                 <div class="infoextracombates text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
                     <img src="assets/images/espe.png">
                         <div class="div-info">
@@ -143,8 +156,10 @@
             </div>
             
             <div class="combates col bg-danger p-3 m-2" id="combate6">
-                <p>Combate 6</p>
-                <p>Grego vs Goncho</p>
+                <p class="lead">Combate 6</p>
+                <p><span class="resaltar">Grego</span></p>
+                <p>VS</p>
+                <p><span class="resaltar">Goncho</span></p>
                 <div class="infoextracombates text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
                     <img src="assets/images/grego.png">
                         <div class="div-info">
@@ -157,8 +172,10 @@
             </div>
             
             <div class="combates col bg-danger p-3 m-2" id="combate7">
-                <p>Combate 7</p>
-                <p>Flor Vigna vs Mica Viciconte</p>
+                <p class="lead">Combate 7</p>
+                <p><span class="resaltar">Flor Vigna</span></p>
+                <p>VS</p>
+                <p><span class="resaltar">Mica Viciconte</span></p>
                 <div class="infoextracombates text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
                     <img src="assets/images/flor-vigna.png">
                         <div class="div-info">
@@ -170,8 +187,10 @@
                 </div>
             </div>
             <div class="combates col bg-danger p-3 m-2" id="combate8">
-                <p>Combate 8</p>
-                <p>Coker vs Perxitaa</p>
+                <p class="lead">Combate 8</p>
+                <p><span class="resaltar">C0ker</span></p>
+                <p>VS</p>
+                <p><span class="resaltar">Perxitaa</span></p>
                 <div class="infoextracombates text-dark p-2 mt-2 rounded d-flex  align-items-center justify-content-center d-none">
                     <img src="assets/images/c0ker.png">
                         <div class="div-info">
@@ -188,7 +207,7 @@
 
 
 
-    <section class="container col-8 align-items-center text-center my-4 p-4 bg-dark text-white">
+    <section class="container col-8 align-items-center text-center my-4 p-4 bg-dark text-white transparecia">
         <h2 > Contador </h2>
         <div id="contador">
             <p>Cuenta atras para la pelea...</p>
@@ -198,7 +217,7 @@
     </section>  
 
 
-    <section class="container col-8 align-items-center text-center my-4 p-4 bg-dark text-white" id="seccion-mapa">
+    <section class="container col-8 align-items-center text-center my-4 p-4 bg-dark text-white transparecia" id="seccion-mapa">
         <h2 class="p-4">Ubicacion del Evento</h2>
         <div id="mapa">
             <iframe class="p-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.4446471862107!2d-58.39908378915898!3d-34.64347195948505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb6aeed57bd3%3A0xe5cec50209b9c4ad!2sEstadio%20Tom%C3%A1s%20Adolfo%20Duc%C3%B3!5e0!3m2!1ses-419!2sar!4v1764971931433!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -207,7 +226,7 @@
 
 
 
-    <div class="container col-5 align-items-center text-center my-4 p-4 bg-dark text-white">
+    <div class="container col-5 align-items-center text-center my-4 p-4 bg-dark text-white transparecia">
         <h2 class="p-3"> Solicitar informacion sobre entradas....</h2>
         <form id="formulario-entradas">
             <div class="mb-3">

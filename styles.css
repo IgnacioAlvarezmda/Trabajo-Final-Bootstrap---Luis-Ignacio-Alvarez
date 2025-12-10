@@ -1,6 +1,23 @@
+*{
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.resaltar{
+    color: rgb(243, 9, 9) !important;
+    text-shadow: 2px 2px 4px #000000;
+}
+
 body{
     background-color: black;
 }
+
+#navegacion{
+    background-color: rgba(0, 0, 0, 0.85) !important;
+    backdrop-filter: blur(10px);
+}
+
 .combates{
     background-color: #3a3a3e !important;
 }
@@ -45,13 +62,16 @@ body{
     border-radius: 10px;
 }
 
+.transparecia{
+    background-color: #21252966 !important;
+}
 
 .mostrar-info{
     display: flex !important;
 }
 
 .infoextracombates img{
-    width: 120px;
+    width: 30%;
     height: auto;
 }
 
