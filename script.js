@@ -45,3 +45,4 @@ botonentradas.addEventListener("click",(e)=>{
             }
         })        
     })
+
