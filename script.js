@@ -1,4 +1,4 @@
-/*-------------ocultar flecha index-----------*/
+/*-------------ocultar flecha index--------------------*/
 
 const flecha= document.getElementById("flecha-abajo")
 
@@ -7,7 +7,7 @@ window.addEventListener("scroll",()=>{
         flecha.classList.add("desaparecer")
 }})
 
-/*-------------boton que te lleva mapa-----------*/
+/*------------boton que te lleva mapa-----------------*/
 
 const botonllegar= document.getElementById("boton-llegar")
 const destino= document.getElementById("seccion-mapa")
@@ -17,8 +17,34 @@ botonllegar.addEventListener("click",()=>{
         destino.scrollIntoView({behavior:"smooth"})
     }
 })
+/*-----------------cuenta atras------------------------*/
 
-/*---------------no dejar mandar form---------------*/
+const contador= document.getElementById("cuenta-atras")
+const fechafinal= new Date("December 20, 2025 18:00:00").getTime();
+
+const actualizarcontador= setInterval(()=>{
+
+    const actual= new Date().getTime();
+    const diferencia= fechafinal - actual;
+
+    const dias= Math.floor(diferencia/(1000*60*60*24));
+    const horas= Math.floor((diferencia % (1000*60*60*24))/(1000*60*60));
+    const minutos= Math.floor((diferencia % (1000*60*60))/(1000*60));
+    const segundos= Math.floor((diferencia % (1000*60))/1000);
+
+        if (contador){
+            contador.innerHTML=`${dias}d ${horas}h ${minutos}m ${segundos}s`;
+        }
+
+        if (diferencia<0){
+        clearInterval(actualizarcontador);
+        if (contador){
+            contador.innerHTML= "Evento en curso o finalizado";
+            contador.style.color= "#ff4d4d";
+        }}
+},1000);
+
+/*---------------no dejar mandar form-------------------*/
 
 const botonentradas= document.getElementById("boton")
 
@@ -38,7 +64,7 @@ botonentradas.addEventListener("click",(e)=>{
 })
 
 
-/*---------------mostrar div info peleas------------*/
+/*---------------mostrar div info peleas--------------*/
 
 const tarjetascombates= document.querySelectorAll(".combates")
 
@@ -50,7 +76,7 @@ const tarjetascombates= document.querySelectorAll(".combates")
             }
         })        
     })
-/*-----------boton girtotrio nav------------*/
+/*--------------boton girtotrio nav------------------*/
 
 const botonnav= document.getElementById("imagen-boton")
 const nav= document.getElementById("navbarnav")

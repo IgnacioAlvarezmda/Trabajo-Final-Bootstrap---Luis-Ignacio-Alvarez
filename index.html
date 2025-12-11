@@ -13,12 +13,11 @@
 </head>
 
 <body>
-    
     <header class="container-fluid align-items-center text-center">
         <div class="row">
             <div id="div-index" class="col justify-content-center align-items-center d-flex flex-column">
                 <img id="index" src="assets/images/logo-pdm.png" alt="Logo del evento">
-                <img id="flecha-abajo" class="col-2" src="assets/images/flecha-abajo1.svg" alt="flecha hacia abajo">
+                <img id="flecha-abajo" class="col-2" src="assets/images/flecha-abajo1.svg" aria-hidden="true" alt="flecha hacia abajo">
             </div>
         </div>
     </header>
@@ -28,10 +27,10 @@
             <a href="#index" class="navbar-brand">
                 <img src="assets/images/logo-pdm.png" alt="Logo del evento" width="100">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarnav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarnav"  aria-expanded="false" aria-label="Menu desplegable" id="boton-navbar">
                 <img src="assets/images/flecha-abajo-nav.svg" alt="Flecha desplegar menu de navegacion" width="40" id="imagen-boton" >
             </button>
-            <div class="collapse navbar-collapse" id="navbarnav">
+            <div class="collapse navbar-collapse" id="navbarnav" >
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#info">Informacion</a>
@@ -55,11 +54,21 @@
             <div class="col">
                 <h2 class="p-4"> ¿Que es Parense de Manos?</h2>
                 <p>"Parense de Manos" es un evento de boxeo amateur organizado por el programa "Paren La mano", trasmitido por la radio Vorterix.</p>
-                <div class="flex-row d-flex justify-content-center align-items-center p-4 text-white rounded" id="div-logos">
-                    <img src="assets/images/plm-logo.jpg" alt="logo de paren la mano">
-                    <span class="p-3">X</span>
-                    <img src="assets/images/vorterix-logo.jpg" alt="logo de vorterix">
+                <div class="flex-row justify-content-center align-items-center p-4" id="div-logos">
+
+                    <a class="text-decoration-none" href="https://www.youtube.com/channel/UCulzKEqyE73gXCUqTimbP4A" target="blank">
+                        <img src="assets/images/plm-logo.jpg" alt="logo de paren la mano">
+                    </a>
+
+                <span class="p-3 text-white">X</span>
+                    
+                    <a class="text-decoration-none" href="https://www.youtube.com/@VorterixOficial" target="blank">
+                        <img src="assets/images/vorterix-logo.jpg" alt="logo de vorterix">
+                    </a>
+
+
                 </div>
+                    
                 <h4 class="p-4"> ¿Cuando y donde se realizara el evento?</h4>
                 <p class="p-2"> El evento se realizara en el Estadio Tomas Adolfo Duco, ubicado en Av. Juan de Garay 2055, CABA.</p>
                 <button class="btn btn-dark p-2 m-2 mb-4" id="boton-llegar">¿Como llegar?</button>
@@ -80,13 +89,13 @@
                 <p>VS</p>
                 <p><span class="resaltar">Gabino Silva</span></p>
                 <div class="infoextracombates text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
-                    <img src="assets/images/banks.png">
-                        <div class="div-info">
+                    <img src="assets/images/banks.png" alt="imagen del boxeador">
+                        <div class="div-info bg-light p-3 m-3">
                             <p>29 - Edad - 27</p>
                             <p>81 kg - Peso - 62 kg</p>
                             <p>1.77 m - Altura - 1.70 m</p>
                         </div>
-                    <img src="assets/images/gabino.png">
+                    <img src="assets/images/gabino.png" alt="imagen del boxeador">
                 </div>
             </div>
             
@@ -96,13 +105,13 @@
                 <p>VS</p>
                 <p><span class="resaltar">Mariano Perez</span></p>
                 <div class="infoextracombates text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
-                    <img src="assets/images/jove.png">
-                        <div class="div-info">
+                    <img src="assets/images/jove.png" alt="imagen del boxeador">
+                        <div class="div-info bg-light p-3 m-3">
                             <p>34 - Edad - 24</p>
                             <p>93 kg - Peso - 87 kg</p>
                             <p>1.81 m - Altura - 1.72 m</p>
                         </div>
-                    <img src="assets/images/perez.png">
+                    <img src="assets/images/perez.png" alt="imagen del boxeador">
                 </div>
             </div>
 
@@ -112,13 +121,13 @@
                 <p>VS</p>
                 <p><span class="resaltar">Gabino Silva</span></p>
                 <div class="infoextracombates text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
-                    <img  src="assets/images/gero-arias.png">
-                        <div class="div-info">
+                    <img  src="assets/images/gero-arias.png" alt="imagen del boxeador">
+                        <div class="div-info bg-light p-3 m-3">
                             <p>22 - Edad - 25</p>
                             <p>72 kg - Peso - 79 kg</p>
                             <p>1.72 m - Altura - 1.76 m</p>
                         </div>
-                    <img src="assets/images/tomas-mazza.png">
+                    <img src="assets/images/tomas-mazza.png" alt="imagen del boxeador">
                 </div>
             </div>
 
@@ -128,13 +137,13 @@
                 <p>VS</p>
                 <p><span class="resaltar">Pepi Staropili</span></p>
                 <div class="infoextracombates text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
-                    <img src="assets/images/maravilla.png">
-                        <div class="div-info">
+                    <img src="assets/images/maravilla.png" alt="imagen del boxeador">
+                        <div class="div-info bg-light p-3 m-3">
                             <p>50 - Edad - 32</p>
                             <p>84 kg - Peso - 92 kg</p>
                             <p>1.78 m - Altura - 1.83 m</p>
                         </div>
-                    <img src="assets/images/pepi.png">
+                    <img src="assets/images/pepi.png" alt="imagen del boxeador">
                 </div>
             </div>
         </div>
@@ -145,13 +154,13 @@
                 <p>VS</p>
                 <p><span class="resaltar">Dairi</span></p>
                 <div class="infoextracombates text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
-                    <img src="assets/images/espe.png">
-                        <div class="div-info">
+                    <img src="assets/images/espe.png" alt="imagen del boxeador">
+                        <div class="div-info bg-light p-3 m-3">
                             <p>22 - Edad - 22</p>
                             <p>57.5 kg - Peso - 52 kg</p>
                             <p>1.69 m - Altura - 1.67 m</p>
                         </div>
-                    <img src="assets/images/dairi.png">
+                    <img src="assets/images/dairi.png" alt="imagen del boxeador">
                 </div>
             </div>
             
@@ -161,13 +170,13 @@
                 <p>VS</p>
                 <p><span class="resaltar">Goncho</span></p>
                 <div class="infoextracombates text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
-                    <img src="assets/images/grego.png">
-                        <div class="div-info">
-                            <p>30 añubis - Edad - 34</p>
-                            <p>65 kg - Peso - 69 kg</p>
+                    <img src="assets/images/grego.png" alt="imagen del boxeador">
+                        <div class="div-info bg-light p-3 m-3">
+                            <p>34 - Edad - 30</p>
+                            <p>69 kg - Peso - 65 kg</p>
                             <p>1.70 m - Altura - 1.70 m</p>
                         </div>
-                    <img src="assets/images/goncho.png">
+                    <img src="assets/images/goncho.png" alt="imagen del boxeador">
                 </div>
             </div>
             
@@ -177,13 +186,13 @@
                 <p>VS</p>
                 <p><span class="resaltar">Mica Viciconte</span></p>
                 <div class="infoextracombates text-dark p-2 mt-2 rounded d-flex align-items-center justify-content-center d-none">
-                    <img src="assets/images/flor-vigna.png">
-                        <div class="div-info">
+                    <img src="assets/images/flor-vigna.png" alt="imagen del boxeador">
+                        <div class="div-info bg-light p-3 m-3">
                             <p>31 - Edad - 36</p>
                             <p>62 kg - Peso - 64 kg</p>
                             <p>1.68 m - Altura - 1.69 m</p>
                         </div>
-                    <img src="assets/images/mica-viciconte.png">
+                    <img src="assets/images/mica-viciconte.png" alt="imagen del boxeador">
                 </div>
             </div>
             <div class="combates col bg-danger p-3 m-2" id="combate8">
@@ -192,13 +201,13 @@
                 <p>VS</p>
                 <p><span class="resaltar">Perxitaa</span></p>
                 <div class="infoextracombates text-dark p-2 mt-2 rounded d-flex  align-items-center justify-content-center d-none">
-                    <img src="assets/images/c0ker.png">
-                        <div class="div-info">
+                    <img src="assets/images/c0ker.png" alt="imagen del boxeador">
+                        <div class="div-info bg-light p-3 m-3">
                             <p>24 - Edad - 34</p>
                             <p>92 kg - Peso - 92 kg</p>
                             <p>1.83 m - Altura - 1.86 m</p>
                         </div>
-                    <img src="assets/images/perxitaa.png">
+                    <img src="assets/images/perxitaa.png" alt="imagen del boxeador">
                 </div>
             </div>
         </div>
@@ -208,10 +217,10 @@
 
 
     <section class="container col-10 col-sm-8 align-items-center text-center my-4 p-4 bg-dark text-white transparecia">
-        <h2 > Contador </h2>
+        <h2 class="display-6 m-2 mb-4"> Contador </h2>
         <div id="contador">
-            <p>Cuenta atras para la pelea...</p>
-            <p id="cuenta_atras">00:00:00 hs</p>
+            <p class="mb-3">Cuenta atras para la pelea...</p>
+            <p id="cuenta-atras"></p>
         </div>
 
     </section>  
