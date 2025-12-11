@@ -22,17 +22,26 @@ const email= document.getElementById("email").value;
 const cantidad= document.getElementById("cantidad").value;
 
 
-    const tarjetascombates= document.querySelectorAll(".combates")
+const tarjetascombates= document.querySelectorAll(".combates")
 
     tarjetascombates.forEach((tarjeta)=>{
-
         tarjeta.addEventListener("click",()=>{
-
             const divinfo= tarjeta.querySelector(".infoextracombates")
-
             if(divinfo){
                 divinfo.classList.toggle("mostrar-info");
             }
         })        
     })
 
+const botonnav= document.getElementById("imagen-boton")
+const nav= document.getElementById("navbarnav")
+    if (nav && botonnav)
+    {
+        nav.addEventListener("show.bs.collapse",()=>{
+            botonnav.classList.add("rotar");
+        })
+        nav.addEventListener("hide.bs.collapse",()=>{
+            botonnav.classList.remove("rotar");
+        })
+        
+    }

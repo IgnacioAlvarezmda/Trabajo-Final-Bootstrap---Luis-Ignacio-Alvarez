@@ -17,13 +17,19 @@ body{
     background-color: rgba(0, 0, 0, 0.85) !important;
     backdrop-filter: blur(10px);
 }
+#imagen-boton{
+    transition: all 0.2s ease-in-out;
+}
+
+.rotar{
+    transform: rotate(180deg);
+}
 
 .combates{
     background-color: #3a3a3e !important;
 }
 .combates:hover {
     background-color: #4d2323a1 !important;
-    /*SOMBRA TIPO BOTON*/
     box-shadow: -5px 5px 8px #000000;
     transition: all 0.1s ease-in-out;
 }
@@ -60,6 +66,10 @@ body{
     width: 10%;
     height:auto;
     border-radius: 10px;
+}
+
+#mapa{
+    max-width: 100%;
 }
 
 .transparecia{
