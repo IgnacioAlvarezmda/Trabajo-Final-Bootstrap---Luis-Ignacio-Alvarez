@@ -47,7 +47,7 @@ body{
     height: auto;
 }
 #flecha-abajo{
-    width: 9vh;
+    width: 7vh;
     height: auto;
     transition: all 0.2s ease-in-out;
     animation: rebote 0.8s infinite alternate;

@@ -6,6 +6,7 @@ window.addEventListener("scroll",()=>{
         flecha.classList.add("desaparecer")
 }})
 
+/*-------------boton que te lleva mapa-----------*/
 
 const botonllegar= document.getElementById("boton-llegar")
 const destino= document.getElementById("seccion-mapa")
@@ -16,11 +17,27 @@ botonllegar.addEventListener("click",()=>{
     }
 })
 
-const botonentradas= document.getElementById("boton")
-const nombre= document.getElementById("nombre").value;
-const email= document.getElementById("email").value;
-const cantidad= document.getElementById("cantidad").value;
+/*---------------no dejar mandar form---------------*/
 
+const botonentradas= document.getElementById("boton")
+
+botonentradas.addEventListener("click",(e)=>{
+    e.preventDefault();
+
+    const nombre= document.getElementById("nombre").value;
+    const email= document.getElementById("email").value;
+    const cantidad= document.getElementById("cantidad").value;
+
+    if (nombre=="" || email=="" || cantidad==""){
+        alert ("Por favor complete todos los campos del formulario.")
+    }
+    else{
+        alert ("Iformacion enviada correctamente. Revise su correo.")
+    }
+})
+
+
+/*---------------mostrar div info peleas------------*/
 
 const tarjetascombates= document.querySelectorAll(".combates")
 
@@ -32,6 +49,7 @@ const tarjetascombates= document.querySelectorAll(".combates")
             }
         })        
     })
+/*-----------boton girtotrio nav------------*/
 
 const botonnav= document.getElementById("imagen-boton")
 const nav= document.getElementById("navbarnav")
