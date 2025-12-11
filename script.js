@@ -1,3 +1,4 @@
+/*-------------ocultar flecha index-----------*/
 
 const flecha= document.getElementById("flecha-abajo")
 

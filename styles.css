@@ -4,35 +4,20 @@
     font-style: normal;
 }
 
+body{
+    background-color: black;
+}
+
 .resaltar{
     color: rgb(243, 9, 9) !important;
     text-shadow: 2px 2px 4px #000000;
 }
 
-body{
-    background-color: black;
+.transparecia{
+    background-color: #21252966 !important;
 }
 
-#navegacion{
-    background-color: rgba(0, 0, 0, 0.85) !important;
-    backdrop-filter: blur(10px);
-}
-#imagen-boton{
-    transition: all 0.2s ease-in-out;
-}
-
-.rotar{
-    transform: rotate(180deg);
-}
-
-.combates{
-    background-color: #3a3a3e !important;
-}
-.combates:hover {
-    background-color: #4d2323a1 !important;
-    box-shadow: -5px 5px 8px #000000;
-    transition: all 0.1s ease-in-out;
-}
+/*--------------INDEX---------------*/
 
 #div-index{
     background-image: url(assets/images/fondo-ring.jpg);
@@ -62,37 +47,67 @@ body{
     transition: opacity 1s ease-out;
 }
 
+/*----------NAV------------------*/
+#navegacion{
+    background-color: rgba(0, 0, 0, 0.85) !important;
+    backdrop-filter: blur(10px);
+}
+#imagen-boton{
+    transition: all 0.2s ease-in-out;
+}
+.rotar{
+    transform: rotate(180deg);
+}
+
+/*---------------INFO----------------*/
+
 #div-logos img{
     width: 10%;
     height:auto;
     border-radius: 10px;
 }
-
-#mapa{
-    max-width: 100%;
+/*--------------COMBATES---------------*/
+.combates{
+    background-color: #3a3a3e !important;
+    height: auto;
 }
-
-.transparecia{
-    background-color: #21252966 !important;
+.combates:hover {
+    background-color: #4d2323a1 !important;
+    box-shadow: -5px 5px 8px #000000;
+    transition: all 0.1s ease-in-out;
 }
 
 .mostrar-info{
     display: flex !important;
 }
 
+.infoextracombates{
+    flex-wrap: nowrap !important; 
+}
+
 .infoextracombates img{
-    width: 30%;
+    width: 20vw;
     height: auto;
+    min-width: 50px;
+    max-width: 170px;
 }
 
 .div-info{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 15px;
     box-shadow: 2px 2px 5px #000000;
     min-width: 250px;
     margin: 20px;
+    width: 100%;
 }
+/*--------------MAPA----------------*/
+
+#mapa{
+    max-width: 100%;
+}
+
+/*--------------ANIMACIONES---------------*/
 
 @keyframes rebote{
     0%{
@@ -101,4 +116,21 @@ body{
     100%{
         transform: translateY(-10px);
     }   
+}
+
+@media (max-width: 768px){
+    #div-logos img{
+        width: 20%;
+    }
+    .infoextracombates{
+        flex-wrap: wrap !important; 
+    }
+    .infoextracombates img{
+        width: 40vw;
+        margin-bottom: 10px;
+    }
+    .div-info{
+        min-width: auto;
+        margin: 10px;
+    }
 }
